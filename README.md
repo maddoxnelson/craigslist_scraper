@@ -2,7 +2,7 @@ Scrape Craigslist, quickly.
 
 Go into the repo and run this command:
 
-```pythong scrape.py bloomingdale 1500```
+```python scrape.py bloomingdale 1500```
 
 or:
 
