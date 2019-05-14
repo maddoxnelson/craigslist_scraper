@@ -1,10 +1,12 @@
 import requests
+from sys import argv # takes three command-line args, no seperators
 # import emoji  # was one idea to impliment the fire.
 
-# takes three command-line args, no seperators
-from sys import argv
 
-script, place, rent = argv  # fill variables with values from command prompt.
+# fill variables with values from command prompt.
+rent = argv[-1]
+loc = argv[1:-1]
+place = ' '.join(loc)
 
 # sets up variables used in script.
 url = "https://washingtondc.craigslist.org/jsonsearch/apa/?query=" + place
